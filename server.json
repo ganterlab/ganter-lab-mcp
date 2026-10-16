@@ -1,0 +1,33 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ganterlab/ganter-lab",
+  "title": "Ganter Lab",
+  "description": "SCADA station on your computer that an AI assistant reads, configures and operates over MCP.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.ganterlab.com",
+  "repository": {
+    "url": "https://github.com/ganterlab/ganter-lab-mcp",
+    "source": "github",
+    "id": "1420126189"
+  },
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/ganterlab/ganter-lab-mcp/main/icon.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "128x128"
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/ganterlab/ganter-lab-mcp/releases/download/v1.0.0/ganter-lab.mcpb",
+      "version": "1.0.0",
+      "fileSha256": "dc588effc97a3eea2cbc2888c96ce20504db5adf67d18ce74c5379b38b5e051b",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "ganter-lab",
+  "displayName": "Ganter Lab",
+  "version": "1.0.0",
+  "description": "Work on the Ganter Lab SCADA station running on this computer: read live values and history, configure devices, logic and screens, and operate only the areas the station allows. Needs Ganter Lab installed and running.",
+  "author": {
+    "name": "Ganter Lab",
+    "url": "https://www.ganterlab.com"
+  },
+  "homepage": "https://www.ganterlab.com/en/docs/agent",
+  "repository": "https://github.com/ganterlab/ganter-lab-mcp",
+  "license": "MIT",
+  "keywords": [
+    "scada",
+    "plc",
+    "modbus",
+    "opc-ua",
+    "mqtt",
+    "siemens-s7",
+    "industrial-automation",
+    "hmi",
+    "local"
+  ],
+  "icon": "./icon.png",
+  "documentationUrl": "https://www.ganterlab.com/en/docs/agent",
+  "privacyPolicyUrl": "https://www.ganterlab.com/en/privacy/desktop",
+  "termsOfServiceUrl": "https://www.ganterlab.com/en/terms"
+}

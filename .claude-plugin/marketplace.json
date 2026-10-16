@@ -1,0 +1,15 @@
+{
+  "name": "ganter-lab",
+  "description": "The Ganter Lab plugin: Claude Code on the SCADA station running on this computer.",
+  "owner": {
+    "name": "Ganter Lab",
+    "url": "https://www.ganterlab.com"
+  },
+  "plugins": [
+    {
+      "name": "ganter-lab",
+      "source": "./",
+      "description": "Work on the Ganter Lab SCADA station running on this computer. Needs Ganter Lab installed and running."
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+# The bundle is a release asset, built from bridge.mjs, manifest.json and icon.png; it is not committed.
+*.mcpb
