@@ -91,6 +91,7 @@ The assistant guide covers every client and every area:
 | `.claude-plugin/`, `.mcp.json` | The Claude Code plugin and the plugin marketplace of this repository |
 | `server.json` | The entry in the official MCP Registry, `io.github.ganterlab/ganter-lab` |
 | `glama.json` | The maintainers, for Glama |
+| `.github/workflows/publish-registry.yml` | Publishes `server.json` to the MCP Registry from GitHub Actions, run by hand after a release |
 
 This package has a version number of its own, which changes only when the bridge, the manifest or
 the plugin changes, not with every version of Ganter Lab.

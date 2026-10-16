@@ -1,0 +1,36 @@
+# Publishes server.json to the official MCP Registry, run by hand from the Actions tab after a release
+# whose bundle server.json points at. The registry trusts this repository's GitHub OIDC token, which
+# grants the io.github.ganterlab/* names, so no secret is stored anywhere.
+name: Publish to the MCP Registry
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download mcp-publisher 1.8.1 and check it against the official checksums
+        run: |
+          base=https://github.com/modelcontextprotocol/registry/releases/download/v1.8.1
+          curl -fsSL -o mcp-publisher.tar.gz "$base/mcp-publisher_linux_amd64.tar.gz"
+          curl -fsSL -o checksums.txt "$base/registry_1.8.1_checksums.txt"
+          echo "$(grep ' mcp-publisher_linux_amd64.tar.gz$' checksums.txt | cut -d' ' -f1)  mcp-publisher.tar.gz" | sha256sum -c -
+          tar -xzf mcp-publisher.tar.gz mcp-publisher
+
+      - name: Check that the released bundle is the one server.json names
+        run: |
+          curl -fsSL -o bundle.mcpb "$(jq -r '.packages[0].identifier' server.json)"
+          echo "$(jq -r '.packages[0].fileSha256' server.json)  bundle.mcpb" | sha256sum -c -
+
+      - name: Sign in with this repository's GitHub identity
+        run: ./mcp-publisher login github-oidc
+
+      - name: Publish
+        run: ./mcp-publisher publish
