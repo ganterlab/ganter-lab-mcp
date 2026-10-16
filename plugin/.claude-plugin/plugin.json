@@ -1,7 +1,7 @@
 {
   "name": "ganter-lab",
   "displayName": "Ganter Lab",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Work on the Ganter Lab SCADA station running on this computer: read live values and history, configure devices, logic and screens, and operate only the areas the station allows. Needs Ganter Lab installed and running.",
   "author": {
     "name": "Ganter Lab",

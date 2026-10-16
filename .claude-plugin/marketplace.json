@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "ganter-lab",
-      "source": "./",
+      "source": "./plugin",
       "description": "Work on the Ganter Lab SCADA station running on this computer. Needs Ganter Lab installed and running."
     }
   ]

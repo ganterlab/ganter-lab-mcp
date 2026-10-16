@@ -89,7 +89,8 @@ The assistant guide covers every client and every area:
 | --- | --- |
 | `bridge.mjs` | The Claude Desktop bundle's bridge: it speaks MCP over stdio to Claude Desktop and forwards each message to the station's endpoint. Built-in Node only, no dependencies. When the station restarts (an update relaunches it), the bridge opens a new session and replays the call, so Claude Desktop needs no restart. For debugging it runs alone: `node bridge.mjs http://127.0.0.1:18181/mcp` |
 | `manifest.json`, `icon.png` | The bundle's manifest and mark. With `bridge.mjs` they make `ganter-lab.mcpb`, attached to each release |
-| `.claude-plugin/`, `.mcp.json` | The Claude Code plugin and the plugin marketplace of this repository |
+| `plugin/` | The Claude Code plugin, in a folder of its own: what Claude Code installs and Anthropic's directory lists |
+| `.claude-plugin/marketplace.json` | The plugin marketplace of this repository, which points Claude Code at `plugin/` |
 | `server.json` | The entry in the official MCP Registry, `io.github.ganterlab/ganter-lab` |
 | `glama.json` | The maintainers, for Glama |
 | `.github/workflows/publish-registry.yml` | Publishes `server.json` to the MCP Registry from GitHub Actions, run by hand after a release |
