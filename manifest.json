@@ -2,7 +2,7 @@
   "manifest_version": "0.2",
   "name": "ganter-lab",
   "display_name": "Ganter Lab",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ask Claude about the Ganter Lab station running on this computer: its equipment, its readings, its alarms and how the app works, and operate what you allow.",
   "long_description": "Ganter Lab is a local SCADA station. With this extension, Claude talks to the station running on this same computer: it can browse the connected equipment and its points, read live values and their quality, look through what the station recorded, and, in the areas you switch on, write values and run what you configured.\n\nClaude also answers questions about how Ganter Lab works from the app's own documentation: the help written for the version installed on this computer, in the language the station reads in, so the pages, buttons and fields it names are the ones on your screen. It comes with agent access, whichever areas are switched on.\n\nNothing leaves the computer. The station listens on this machine only, this extension reaches it there, and what Claude may touch is decided on the station's Agent page, area by area, over a master switch. Everything Claude does is written to the station's own event journal under its own name.\n\nBefore installing, turn agent access on in Ganter Lab (Agent page) and copy the address shown there into the setting below.",
   "icon": "icon.png",

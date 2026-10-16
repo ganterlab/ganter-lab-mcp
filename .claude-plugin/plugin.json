@@ -1,7 +1,7 @@
 {
   "name": "ganter-lab",
   "displayName": "Ganter Lab",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Work on the Ganter Lab SCADA station running on this computer: read live values and history, configure devices, logic and screens, and operate only the areas the station allows. Needs Ganter Lab installed and running.",
   "author": {
     "name": "Ganter Lab",
@@ -24,5 +24,14 @@
   "icon": "./icon.png",
   "documentationUrl": "https://www.ganterlab.com/en/docs/agent",
   "privacyPolicyUrl": "https://www.ganterlab.com/en/privacy/desktop",
-  "termsOfServiceUrl": "https://www.ganterlab.com/en/terms"
+  "termsOfServiceUrl": "https://www.ganterlab.com/en/terms",
+  "userConfig": {
+    "endpoint": {
+      "type": "string",
+      "title": "MCP endpoint",
+      "description": "The URL shown on the app's Agent page (match the configured port).",
+      "default": "http://127.0.0.1:18181/mcp",
+      "required": true
+    }
+  }
 }

@@ -59,9 +59,10 @@ Or with one command and no plugin:
 claude mcp add --transport http ganterlab http://127.0.0.1:18181/mcp
 ```
 
-**Another port.** The plugin connects to the default port, 18181. If the Agent page shows another
-port, either set the station back to 18181 there, or turn the plugin's `ganterlab` server off in
-`/mcp` and add the station with the `claude mcp add` command above, using the port the page shows.
+**Another port.** The plugin's **MCP endpoint** setting holds the station's address, filled in with
+the default, `http://127.0.0.1:18181/mcp`. If the Agent page shows another port, change that setting
+to the address the page shows: Claude Code asks for it when the plugin is enabled, and `/config`
+lists it afterwards.
 
 ### Codex
 
