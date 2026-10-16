@@ -107,6 +107,10 @@ Ganter Lab's plans are on the [pricing page](https://www.ganterlab.com/en/pricin
 - Ganter Lab: [www.ganterlab.com](https://www.ganterlab.com)
 - Assistant guide: [www.ganterlab.com/en/docs/agent](https://www.ganterlab.com/en/docs/agent)
 
+## Support
+
+Questions and problems: contact@ganterlab.com. Security reports go to the same address.
+
 ## License
 
 The bridge, the manifest and the plugin are under the [MIT License](LICENSE). Ganter Lab itself is

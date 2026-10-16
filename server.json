@@ -3,7 +3,7 @@
   "name": "io.github.ganterlab/ganter-lab",
   "title": "Ganter Lab",
   "description": "SCADA station on your computer that an AI assistant reads, configures and operates over MCP.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "websiteUrl": "https://www.ganterlab.com",
   "repository": {
     "url": "https://github.com/ganterlab/ganter-lab-mcp",
@@ -22,9 +22,9 @@
   "packages": [
     {
       "registryType": "mcpb",
-      "identifier": "https://github.com/ganterlab/ganter-lab-mcp/releases/download/v1.0.2/ganter-lab.mcpb",
-      "version": "1.0.2",
-      "fileSha256": "a02ce2ab77035a641f599c9e89d2cf655a3208ce5cd309e13117092bbd5ad350",
+      "identifier": "https://github.com/ganterlab/ganter-lab-mcp/releases/download/v1.0.3/ganter-lab.mcpb",
+      "version": "1.0.3",
+      "fileSha256": "ad628dc4d93106159fd95968b867202c00adaec88387caf64d408fa51153d06e",
       "transport": {
         "type": "stdio"
       }
